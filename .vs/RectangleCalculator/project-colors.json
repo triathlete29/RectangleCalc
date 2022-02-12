@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ae175e06-2ab7-4353-8c41-006004059d05": {
+      "ProjectGuid": "ae175e06-2ab7-4353-8c41-006004059d05",
+      "DisplayName": "RectangleCalculator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
