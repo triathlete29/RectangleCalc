@@ -60,39 +60,46 @@ namespace Assignment2
                 Console.WriteLine(ex.Message);
             }
 
-
-            if (choice == 1)
+            try
             {
-                Console.WriteLine("Please Enter the lenght of the rectangle");
-                rect.Length = Convert.ToInt32(Console.ReadLine());
+                if (choice == 1)
+                {
+                    Console.WriteLine("Please Enter the lenght of the rectangle");
+                    rect.Length = Convert.ToInt32(Console.ReadLine());
+                }
+                if (choice == 2)
+                {
+                    Console.WriteLine("Please Enter the lenght of the rectangle");
+                    rect.Length = Convert.ToInt32(Console.ReadLine());
+                }
+                if (choice == 3)
+                {
+                    Console.WriteLine("Please Enter the width of the rectangle");
+                    rect.Width = Convert.ToInt32(Console.ReadLine());
+                }
+                if (choice == 4)
+                {
+                    Console.WriteLine("Please Enter the width of the rectangle");
+                    rect.Width = Convert.ToInt32(Console.ReadLine());
+                }
+                if (choice == 5)
+                {
+                    Console.WriteLine((rect.Width * 2) + (rect.Length * 2));
+                }
+                if (choice == 6)
+                {
+                    Console.WriteLine(rect.Width * rect.Length);
+                }
+                if (choice == 7)
+                {
+                    Environment.Exit(0);
+                }
             }
-            if (choice == 2)
+            catch (Exception ex)
             {
-                Console.WriteLine("Please Enter the lenght of the rectangle");
-                rect.Length = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(ex.Message);
             }
-            if (choice == 3)
-            {
-                Console.WriteLine("Please Enter the width of the rectangle");
-                rect.Width = Convert.ToInt32(Console.ReadLine());
-            }
-            if (choice == 4)
-            {
-                Console.WriteLine("Please Enter the width of the rectangle");
-                rect.Width = Convert.ToInt32(Console.ReadLine());
-            }
-            if (choice == 5)
-            {
-                Console.WriteLine((rect.Width * 2) + (rect.Length * 2));
-            }
-            if (choice == 6)
-            {
-                Console.WriteLine(rect.Width * rect.Length);
-            }
-            if (choice == 7)
-            {
-                Environment.Exit(0);
-            }
+            
         }
     }
 }
